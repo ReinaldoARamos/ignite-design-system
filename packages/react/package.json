@@ -15,6 +15,7 @@
     "@ignite-ui/tokens" : "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
-    "@ignite-ui/ts-config": "*"
+    "@ignite-ui/ts-config": "*",
+    "@ignite-ui/eslint-config": "*"
   }
 }
