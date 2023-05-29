@@ -12,10 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@ignite-ui/tokens" : "*",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4",
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
-    "@ignite-ui/eslint-config": "*"
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   }
 }
