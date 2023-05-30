@@ -6,3 +6,5 @@ export default  {
     component: Button,
     
 } as Meta
+
+export const Primary: StoryObj = {}
