@@ -11,8 +11,8 @@ export default {
         (Story) => {
             return (
                 
-                    <Box>
-                      <Text>E-mail adress</Text>
+                    <Box as='label' css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
+                      <Text >E-mail adress</Text>
                         {Story()}</Box>
             )
         }
