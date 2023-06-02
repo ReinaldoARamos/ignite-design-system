@@ -5346,6 +5346,7 @@ var src_exports = {};
 __export(src_exports, {
   Avatar: () => Avatar2,
   Box: () => Box,
+  Button: () => Button,
   Heading: () => Heading,
   Text: () => Text
 });
@@ -5593,10 +5594,84 @@ function Avatar2(props) {
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AvatarFallback, { delayMs: 600, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(User, {}) })
   ] });
 }
+
+// src/components/Button.tsx
+var Button = styled("button", {
+  all: "unset",
+  borderRadius: "$sm",
+  fontSize: "$sm",
+  fontWeight: "$medium",
+  fontFamily: "$default",
+  textAlign: "center",
+  minWidth: 120,
+  boxSizing: "border-box",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "$2",
+  cursor: "pointer",
+  svg: {
+    width: "$4",
+    height: "$4"
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  variants: {
+    variant: {
+      primary: {
+        color: "$white",
+        backgroundColor: "$ignite300",
+        "&:not(:disabled):hover": {
+          backgroundcolor: "$ignite500"
+        },
+        "&:disabled": {
+          background: "$gray200"
+        }
+      },
+      secondary: {
+        color: "$ignite300",
+        border: "2px solid $ignite500",
+        "&:not(:disabled):hover": {
+          backgroundcolor: "$ignite500",
+          color: "#FFFFFF"
+        },
+        "&:disabled": {
+          color: "$gray200",
+          background: "$gray200"
+        }
+      },
+      tertiary: {
+        color: "$white",
+        "&:not(:disabled):hover": {
+          backgroundcolor: "$gray600"
+        },
+        "&:disabled": {
+          backgroundColor: "$gray200"
+        }
+      }
+    },
+    size: {
+      sm: {
+        padding: "0 $4",
+        height: 38
+      },
+      md: {
+        padding: "0 $4",
+        height: 46
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary",
+    size: "md"
+  }
+});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
+  Button,
   Heading,
   Text
 });
