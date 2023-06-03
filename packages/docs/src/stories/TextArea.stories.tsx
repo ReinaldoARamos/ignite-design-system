@@ -12,7 +12,7 @@ export default {
             return (
                 
                     <Box as='label' css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
-                      <Text >E-mail adress</Text>
+                      <Text >Observations</Text>
                         {Story()}</Box>
             )
         }
@@ -22,19 +22,6 @@ export default {
 
 export const Primary: StoryObj<TextAreaProps> = {
     args: {
-        placeholder: 'type your name'
+        placeholder: 'Add Observation'
     }
-};
-
-export const WithPrefix: StoryObj<TextAreaProps> = {
-  args: {
-    prefix: "call.com",
-  },
-};
-
-
-export const Disabled: StoryObj<TextAreaProps> = {
-    args: {
-    disabled: true,
-    },
-  };
+}

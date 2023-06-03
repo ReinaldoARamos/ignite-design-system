@@ -25,14 +25,13 @@ export const TextArea = styled('div', {
 
     '&:disabled': {
         opacity: 0.5,
-        cursor: 'not-allowed',
-
+        cursor: 'not-allowed'
         
 
     },
 
     '&:placeholder': {
-        color: "$gray400"
+        color: "$gray100"
     }
 })
 

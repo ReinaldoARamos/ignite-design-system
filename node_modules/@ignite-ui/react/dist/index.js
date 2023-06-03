@@ -5740,7 +5740,7 @@ var TextArea = styled("div", {
     cursor: "not-allowed"
   },
   "&:placeholder": {
-    color: "$gray400"
+    color: "$gray100"
   }
 });
 // Annotate the CommonJS export names for ESM import in node:
