@@ -5816,10 +5816,22 @@ var Steps = styled("div", {
   marginTop: "$1",
   gridTemplateColumns: "repeat(var(--steps-size)), 1fr"
 });
+var Step = styled("div", {
+  height: "$1",
+  borderRadius: "$px",
+  backgroundColor: "$gray600",
+  variants: {
+    active: {
+      true: {
+        backgroundColor: "$gray100"
+      }
+    }
+  }
+});
 
 // src/components/MultiStep/index.tsx
 var import_jsx_runtime4 = __toESM(require_jsx_runtime());
-function MultiStep({ size, currentStep }) {
+function MultiStep({ size, currentStep = 1 }) {
   return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(MultiStepContainer, { children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(Label, { children: [
       "Passo ",
@@ -5828,7 +5840,9 @@ function MultiStep({ size, currentStep }) {
       size,
       " "
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1) })
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Step, { active: currentStep >= step }, step);
+    }) })
   ] });
 }
 // Annotate the CommonJS export names for ESM import in node:

@@ -13,7 +13,7 @@ export default {
           css={{
             display: "flex",
             gap: "$2",
-            flexDirection: "row",
+            flexDirection: 'row',
             alignItems: "center",
           }}
         >

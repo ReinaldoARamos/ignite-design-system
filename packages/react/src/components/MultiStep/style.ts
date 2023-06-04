@@ -19,4 +19,22 @@ export const Steps = styled('div', {
     gap: '$2',
     marginTop:  "$1",
     gridTemplateColumns: 'repeat(var(--steps-size)), 1fr',
+    
+})
+
+
+export const Step = styled('div', {
+  height: "$1",
+  borderRadius: "$px",
+  backgroundColor: '$gray600',
+
+
+  variants:{
+    active: {
+        true: {
+            backgroundColor: '$gray100',
+        }
+    }
+  }
+  
 })

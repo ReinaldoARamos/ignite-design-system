@@ -15,7 +15,7 @@ export default {
             return (
                 
                     <Box as='label' css={{display: 'flex', flexDirection: 'column', gap: '$2'}}>
-                      <Text >Formulário</Text>
+                     
                         {Story()}</Box>
             )
         }
@@ -24,3 +24,11 @@ export default {
 } as Meta<MultiStepContainerProps>;
 
 export const Primary: StoryObj<MultiStepContainerProps> = {} 
+
+
+export const Full: StoryObj<MultiStepContainerProps> = {
+    args: {
+        currentStep: 4,
+        
+    }
+} 
