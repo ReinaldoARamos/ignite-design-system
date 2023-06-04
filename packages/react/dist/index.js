@@ -5814,7 +5814,7 @@ var Steps = styled("div", {
   display: "grid",
   gap: "$2",
   marginTop: "$1",
-  gridTemplateColumns: "repeat(var(--steps-size)), 1fr"
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)"
 });
 var Step = styled("div", {
   height: "$1",
