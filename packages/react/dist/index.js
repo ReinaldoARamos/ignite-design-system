@@ -5828,7 +5828,7 @@ function MultiStep({ size, currentStep }) {
       size,
       " "
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Steps, { css: { "--steps-size": size } })
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1) })
   ] });
 }
 // Annotate the CommonJS export names for ESM import in node:
