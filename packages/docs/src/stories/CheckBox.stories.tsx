@@ -5,13 +5,17 @@ export default {
   component: CheckBox,
   title: "Form/CheckBox",
 
-  args: {},
   decorators: [
     (Story) => {
       return (
         <Box
           as="label"
-          css={{ display: "flex", gap: "$2", flexDirection: 'row', alignItems: "center"}}
+          css={{
+            display: "flex",
+            gap: "$2",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
         >
           {Story()}
           <Text>Accept Terms of use</Text>
@@ -19,6 +23,7 @@ export default {
       );
     },
   ],
+ 
 } as Meta<CheckBoxContainerPros>;
 
 export const Primary: StoryObj<CheckBoxContainerPros> = {};
