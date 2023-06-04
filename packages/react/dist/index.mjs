@@ -5742,6 +5742,9 @@ var CheckBoxContainer = styled(CheckBox.Root, {
   border: "1px solid $gray900",
   "&:focus": {
     border: "1px solid $ignite300"
+  },
+  '&[data-state="checked"]': {
+    backgroundColor: "$ignite300"
   }
 });
 var CheckBoxIndicator = styled(CheckBox.Indicator, {
