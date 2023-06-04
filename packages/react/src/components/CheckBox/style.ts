@@ -1,4 +1,4 @@
-import { styled } from "../../styles";
+import { styled, keyframes } from "../../styles";
 import * as CheckBox from '@radix-ui/react-checkbox'
 
 export const CheckBoxContainer = styled(CheckBox.Root, {
@@ -27,9 +27,36 @@ backgroundColor: '$ignite300'
 })
 
 
+const slideIn = keyframes({
+    from:{
+        transform: 'translateY(-100%)'
+    },
+    to:{
+        transform: 'translateY(0%)'
+    }
+})
+
+const slideOut = keyframes({
+    from:{
+        transform: 'translateY(0%)'
+    },
+    to:{
+        transform: 'translateY(-100%)'
+    }
+})
 export const CheckBoxIndicator = styled(CheckBox.Indicator, {
     color: '$white',
     width: '100%',
-    height: 16
+    height: 16,
+
+
     
+'&[data-state="checked"]': {
+animation: `${slideIn} 200ms ease-out` 
+    },
+    
+    
+'&[data-state="unchecked"]': {
+        }
+        
 })
