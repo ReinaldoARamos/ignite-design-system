@@ -5319,10 +5319,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx3 = jsxWithValidationDynamic;
+        var jsx4 = jsxWithValidationDynamic;
         var jsxs3 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx3;
+        exports.jsx = jsx4;
         exports.jsxs = jsxs3;
       })();
     }
@@ -5347,6 +5347,7 @@ __export(src_exports, {
   Avatar: () => Avatar2,
   Box: () => Box,
   Button: () => Button,
+  CheckBox: () => CheckBox2,
   Heading: () => Heading,
   Text: () => Text,
   TextArea: () => TextArea,
@@ -5743,11 +5744,44 @@ var TextArea = styled("div", {
     color: "$gray100"
   }
 });
+
+// src/components/CheckBox/style.ts
+var CheckBox = __toESM(require("@radix-ui/react-checkbox"));
+var CheckBoxContainer = styled(CheckBox.Root, {
+  width: 22,
+  height: 22,
+  backgroundColor: "$gray900",
+  borderRadius: "$xs",
+  lineHeight: 0,
+  cursor: "pointer",
+  overflow: "hidden",
+  boxSizing: "border-box",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  border: "1px solid $gray900",
+  "&:focus": {
+    border: "1px solid $ignite300"
+  }
+});
+var CheckBoxIndicator = styled(CheckBox.Indicator, {
+  color: "$white",
+  width: "100%",
+  height: 16
+});
+
+// src/components/CheckBox/index.tsx
+var import_phosphor_react = require("phosphor-react");
+var import_jsx_runtime3 = __toESM(require_jsx_runtime());
+function CheckBox2(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckBoxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckBoxIndicator, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_phosphor_react.Checks, { weight: "bold" }) }) }));
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
+  CheckBox,
   Heading,
   Text,
   TextArea,
