@@ -12,7 +12,7 @@ export const Label = styled(Text, {
     defaultVariants: {
         size: 'xs'
     }
-    
+
 })
 
 export const Steps = styled('div', {
@@ -20,6 +20,7 @@ export const Steps = styled('div', {
     gap: '$2',
     marginTop:  "$1",
     gridTemplateColumns: 'repeat(var(--steps-size), 1fr)',
+    
     
 })
 
