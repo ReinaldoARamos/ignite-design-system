@@ -10,8 +10,7 @@ build-and-deploy:
 runs-on: ubunto-latest
 steps:
 - name: Checkout
-use: actions/checkout@v3
-
+uses: actions/checkout@v3
 - name: Setup Node.Js
 - action: actions/setup-node
 with: 
