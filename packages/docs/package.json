@@ -30,6 +30,7 @@
     "@ignite-ui/eslint-config": "*",
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*"
+    "@ignite-ui/ts-config": "*",
+    "@storybook/storybook-deployer": "^2.8.16"
   }
 }
