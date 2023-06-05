@@ -12,6 +12,7 @@ export const Label = styled(Text, {
     defaultVariants: {
         size: 'xs'
     }
+    
 })
 
 export const Steps = styled('div', {
