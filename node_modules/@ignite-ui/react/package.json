@@ -26,6 +26,7 @@
     "@radix-ui/react-checkbox": "^1.0.4",
     "@stitches/react": "^1.2.8",
     "lucide-react": "^0.236.0",
-    "phosphor-react": "^1.4.1"
+    "phosphor-react": "^1.4.1",
+    "@ignite-ui/eslint-config": "*"
   }
 }
