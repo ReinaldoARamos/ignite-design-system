@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Box, Text, MultiStep, MultiStepContainerProps } from "@ignite-ui/react";
+import { Box, Text, MultiStep, MultiStepContainerProps } from "@reinaldo-ignite-ui/react";
 
 export default {
   component: MultiStep,
