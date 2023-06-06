@@ -16,7 +16,7 @@ alignItems: 'center',
 justifyContent: 'center',
 border: '1px solid $gray900',
 
-'&:focus': {
+'&:focus, &[data-state="checked"]': {
     border: '1px solid $ignite300'
 
 },
