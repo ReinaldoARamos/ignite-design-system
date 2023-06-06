@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@reinaldo-ignite-ui/tokens": "^1.0.0",
     "turbo": "^1.10.0"
   },
   "scripts": {
@@ -12,7 +13,6 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=packages/docs  && changeset publish "
-
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1"
