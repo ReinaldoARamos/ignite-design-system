@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@reinaldo-ignite-ui/docs",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -29,9 +29,9 @@
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@reinaldo-ignite-ui/react": "*",
+    "@reinaldo-ignite-ui/tokens": "*",
+    "@reinaldo-ignite-ui/ts-config": "*",
     "@storybook/storybook-deployer": "^2.8.16"
   }
 }

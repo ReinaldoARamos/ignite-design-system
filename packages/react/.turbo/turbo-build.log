@@ -1,5 +1,5 @@
 
-> @ignite-ui/react@1.0.0 build
+> @ignite-ui/react@2.0.0 build
 > tsup src/index.tsx --format esm,cjs --dts --external react
 
 [34mCLI[39m Building entry: src/index.tsx
@@ -9,9 +9,9 @@
 [34mESM[39m Build start
 [34mCJS[39m Build start
 [32mESM[39m [1mdist\index.mjs [22m[32m10.73 KB[39m
-[32mESM[39m ⚡️ Build success in 102ms
+[32mESM[39m ⚡️ Build success in 141ms
 [32mCJS[39m [1mdist\index.js [22m[32m12.81 KB[39m
-[32mCJS[39m ⚡️ Build success in 102ms
+[32mCJS[39m ⚡️ Build success in 148ms
 [34mDTS[39m Build start
-[32mDTS[39m ⚡️ Build success in 10642ms
+[32mDTS[39m ⚡️ Build success in 6739ms
 [32mDTS[39m [1mdist\index.d.ts [22m[32m43.25 KB[39m
